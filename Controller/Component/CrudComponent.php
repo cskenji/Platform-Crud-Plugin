@@ -834,6 +834,7 @@ class CrudComponent extends Component {
  * @return void
  */
 	protected function _redirect($subject, $url = null) {
+		$url = array();
 		if (!empty($this->_request->data['redirect_url'])) {
 			$url = $this->_request->data['redirect_url'];
 		} elseif (!empty($this->_request->query['redirect_url'])) {
